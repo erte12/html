@@ -1,8 +1,36 @@
 body {
-	background-color: blue;
+	font-family: sans-serif;
+	margin: 0;
 }
 
-.klasa {
-	font-size: 40px;
-	background-color: red;
+nav#main-nav{
+	background-color: steelblue;
+	color: #ffffff;
+	text-align: center;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+ul#main-menu {
+	display: flex; /* w jednej linii */
+	list-style: none; /* usuwanie znaczków */
+	flex-wrap: wrap; /* zawijanie do następnej linii */
+	padding: 0;
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+ul#main-menu li {
+	flex-grow: 1; /* równoważność elementów */
+}
+
+a#main-logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+@media (min-width: 760px) {
 }
