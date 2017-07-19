@@ -8,8 +8,15 @@ img {
 	display: block;
 }
 
-nav#main-nav{
-	background-color: steelblue;
+#main-nav-wrapper {
+	background-color:rgba(0,0,0,0.75);
+	position: fixed;
+	width: 100%;
+	max-height: 100%;
+	overflow: auto;
+}
+
+#main-nav {
 	color: #ffffff;
 	text-align: center;
 }
@@ -25,9 +32,7 @@ nav a {
 }
 
 ul#main-menu {
-	display: flex; /* w jednej linii */
 	list-style: none; /* usuwanie znaczków */
-	flex-wrap: wrap; /* zawijanie do następnej linii */
 	padding: 0;
 	margin: 10px 0 0 0;
 	text-align: center;
@@ -40,7 +45,7 @@ ul#main-menu li {
 
 #main-header {
 	text-align: center;
-	background-image: url(background.jpg);
+	background-image: url(../images/background.jpg);
 	background-position: center;
 	background-size: cover;
 	padding: 10px 20px;
@@ -102,14 +107,11 @@ ul#main-menu li {
 @media (min-width: 760px) {
 
 	#main-nav {
-		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 5px 0 5px 0;
-	}
-
-	#main-logo {
-		padding-left: 10px;
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 
 	ul#main-menu {
@@ -117,7 +119,7 @@ ul#main-menu li {
 	}
 
 	ul#main-menu li {
-		margin-right: 10px;
+
 		margin-bottom: 0;
 	}
 
